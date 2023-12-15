@@ -1,0 +1,273 @@
+/* configuração inicíal  */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    /* cor de fundo */
+    background-color: #708090;
+    /* ajustamos o tamanho do preenchimento */
+    padding: 40px;
+}
+
+    /* aqui chamamos nossa class que armazena as listas */
+.menu-header{
+    /* Usamos para jogar os itens lado a lado */
+    display: flex;
+    /* Justificando o conteúdo para o final do header */
+    justify-content: end;
+    /* Usado para habilitar a quebra em telas menores */
+    flex-wrap: wrap;
+}
+
+.menu-header > li > a {
+    /* Alteração da cor da letra */
+    color: white;
+    /* desabilitando a decoração no texto (sublinhado) */
+    text-decoration: none;
+    /* Tamanho da letra */
+    font-size: 15px;
+} 
+
+/* Chamamos nossa tag "a" para estilização ao passar o mouse */
+.menu-header > li > a:hover {
+    /* Habilitando a cor que será habilitada */
+    color: blue;
+    /* Tempo de transição para o efeito */
+    transition: 0.8s;
+}
+
+    /* Chamamos nossa LI diretamente para espaça-las */
+.menu-header> li {
+    /* Margem a esquerda para espaçamento  */
+    margin-left: 20px;
+}
+
+#sessao{
+    /* equivale 16px */
+    padding: 12rem;
+    background: linear-gradient(180deg, #c0cdcf 8.33%,
+    rgba(90, 168, 168) 100%);
+}
+
+#sessao{
+    /*  */
+    font-size: 45px;
+    /*  */
+    color: #222223;
+}
+
+#sessao > p {
+    /* tamanho da letra */
+    font-size: 40px;
+}
+
+    /* chamamos nosso button que está dentro dessa primeira
+     sessão */
+#sessao > button {
+    /* Tamanho do preenchimento interno no botão */
+    padding: 20px;
+    /* borda arredondada do botão  */
+    border-radius: 45px;
+    /* tamanho lateral do botão (largura) */
+    width: 15rem;
+    /* cor da letra */
+    color: rgb(19, 153, 108);
+    /* cor da borda */
+    border-color: rgb(19, 153, 108);
+    /* marguem em volta do button */
+    margin: 30px;
+    /* tamanho da letra dentro do button */
+    font-size: 15px;
+}
+
+/* Efeito ao passar o cursor */
+#sessao > button:hover{
+    /* Atribuimos a cor que ficara */
+    background-color: rgb(90, 168, 168);
+    /* Cor da letra que irá se tornar ao passar o cursor */
+    color: white;
+    /* Cor da borda ao passar o cursor */
+    border-color: white;
+    /* Tamanho da letra dentro do button */
+    transition: 0.8s;
+}
+
+#app{
+    /* Preenchimento da section */
+    padding: 30vh;
+    /* Cor da fonte da section */
+    background-color: rgb(204, 199, 199);
+    /* jogando os itens lado a lado */
+    display: flex;
+    /* Justificando o conteúdo espaçamento ínicial ao final */
+    justify-content: space-between;
+    /* Adaptando a sessão para quebar em telas menores */
+    flex-wrap: wrap;
+}
+
+    
+#app > div > button{
+    /* Preenchimento do nosso botão */
+    padding: 20px;
+    /* Arredondamento da bordas */
+    border-radius: 50px;
+    /* Ajustamos a largura do botão */
+    width: 20vw;
+    /* Cor da letra */
+    color: rgb(19, 153, 108);
+    /* Cor da Borda do button */
+    border-color: rgb(19, 153, 108);
+    /* Tamanho da letra que esta dentro do button */
+    margin: 30px;
+}
+
+#app > div > p {
+    font-size: 43px;
+}
+
+#app > div > button:hover{
+    /* Alteramos a cor de fundo ao passar o mouse */
+    background-color:rgb(19, 153, 108) ;
+    /* Cor da letra em questão */
+    color: white;
+    /* Cor da bordar */
+    border-color: white;
+    /* Tempo de transição ao passar o mouse */
+    transition: 0.8s;
+}
+
+    /* Aqui chamamos nossa img para estilizar */
+#app > div > img {
+    /* Largura da imagem usando o Viewport */
+    width: 30vw;
+    /* Altura da imagem usando o Viewport */
+    height: 60vh;
+    /* Espaçamento da margem superior */
+    margin-top: -70px;
+
+}
+
+#container {
+    padding: 30vh;
+    background-color: rgb(204, 199, 199) ;
+    flex-wrap: wrap;
+}
+
+/* Chamamos nosso h2 para alteração */
+#container > h2 {
+    /* Atribuimos um tamanho a letra */
+    font-size: 40px;
+    /* Espaçamento superior usando (-) */
+    margin-top: -20rem;
+    /* Cor da letra do h2 */
+    color: rgb(22, 22, 140, 0.81);
+    /* Alinhamento do título ao centro */
+    text-align: center;
+}
+
+#container > p {
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.856);
+    text-align: justify;
+}
+
+#container .text1{
+    text-align: center;
+}
+
+#container button { /* aqui estamos chamando nosso button para estilização*/
+    padding: 20px; /* tamanho do preenchimento */ 
+    border-radius: 50px;/* arredondamento das bordas*/ 
+    width: 15vw;/* largura do botão */
+    color: rgba(0, 0, 225, 0.72);/* cor da letra*/
+    border-color: rgba(0, 0, 225, 0.72) ;/* cor da borda do botão*/
+    margin: 60px;/* margem externa*/
+    font-size: 15px;/* tamanho da letra*/
+}
+#container button:hover{
+    background-color: rgba(0, 0, 225, 0.72);/* cor de fundo */
+    color: white;/* cor da letra*/
+    border-color: white;/* cor da bordar*/
+   transition: 1s;/* tempo de transição*/ 
+}
+.line{ /* aqui chamamos nossa class onde armazena a linha*/
+    margin: 0 auto;/* habilitando a linha a centro deixando as laterais automáticas. inferior e superiorem 0.*/
+    width: 70%;/* */
+}
+
+#container img { /* chamamos nossa img da section para estilização*/
+    width: 50vw;/*largura da imagem */
+    margin-top: 30px;/*distância da margem superior */
+    margin-left: 10vw;/*distância da margem a esquerda */
+}
+
+#cofre {
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);/* colocamos o fundo em forma de imagem */
+    background-position: center;/* tag usada para alinhar a imagem de fundo ao centro*/
+    background-attachment: fixed;/* fixar a imagem do background (fundo) no site*/
+    height: 50rem;/* definir o tamanho da imagem*/
+    display: flex;/* colocar o texto ao lado da imagem do cofre*/
+    align-items: center;/* colocar o texto no centro do padding*/
+    flex-wrap: wrap;/* permitir quebra de linha para outros dispositivos */
+}
+
+#cofre div img{
+    width: 19vw;/* mexer no tamanho da imagem*/
+    margin-left: 25rem;/* alterar o tamanho da margem esquerda da imagem */
+    margin-top: 8rem;/* alterar a margem superior da imagem*/
+    flex-wrap: wrap;/* permitir a quebra de linha para melhor visibilidade a outros dispositivos */
+
+}
+
+#cofre div h2{
+    color: white;/* alterar a cor da letra*/
+    font-size: 30px;/* aumentar o tamanho da letra*/
+    margin-left: 9rem;/* alterar o tamanho da margem a esquerda */
+
+}
+
+#cofre div p {
+    color: white;/* alterar a cor da letra */
+    font-size: 17px;/* aumentar o tamanho da fonte */
+    margin-left: 9rem;/* alterar o tamanho da margem a esquerda */
+    margin-top: 2rem;/* alterar o tamanho da margem superior*/
+    }
+
+    footer{
+        padding: 13vh;/* preenchimento do rodapé*/
+        background-color: black;/* cor de fundo*/
+        text-align: center;/* alinhando o texto ao centro*/
+
+    }
+
+    footer img{
+        width: 16rem;/* largura da imagem*/
+        height: 7rem;/* altura da imagem*/
+        margin-top: -5rem;/* espaçamento superior usando o (-)*/
+    }
+
+    .item_footer{
+       color: rgb(108, 104, 104);
+       display: flex;
+       justify-content: space-between; 
+
+    }
+
+    .footer_item a{
+        color: rgb(108, 104, 104);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .item_footer a:hover{
+        color: blue;
+        transition: 1s;
+    }
+
+
+
